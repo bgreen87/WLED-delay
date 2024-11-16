@@ -149,6 +149,9 @@
 #include "src/dependencies/json/AsyncJson-v6.h"
 #include "src/dependencies/json/ArduinoJson-v6.h"
 
+// Added comments from https://github.com/Aircoookie/WLED/issues/812
+WLED_GLOBAL unsigned long turnedOnTime _INIT(0);
+
 // ESP32-WROVER features SPI RAM (aka PSRAM) which can be allocated using ps_malloc()
 // we can create custom PSRAMDynamicJsonDocument to use such feature (replacing DynamicJsonDocument)
 // The following is a construct to enable code to compile without it.
